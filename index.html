@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smooth Animation</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<section class="banner">
+		
+	</section>
+	<div class="container feature">
+		<div class="row">
+			<div class="col-sm-4 feature-item animation slideLeft">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet commodi quas, minus et ipsum minima nesciunt iure cupiditate quaerat consequatur fuga non iusto. Asperiores distinctio veniam autem reprehenderit minus.</p>
+			</div>
+			<div class="col-sm-4 feature-item">
+				<p>Recusandae, illo. Fugit nisi sapiente saepe eveniet beatae, odit dignissimos quas illum, aspernatur quod ipsa reiciendis impedit quos dolorem. Quos iste dolorum tempora aliquid alias rerum eaque, fugit, velit laudantium!</p>
+			</div>
+			<div class="col-sm-4 feature-item animation slideRight">
+				<p>Magnam repellendus deleniti placeat labore, at quae expedita praesentium autem aliquid quaerat quo non ipsum suscipit nihil animi quidem doloribus consequuntur perferendis nostrum iste libero vero omnis asperiores nobis ut.</p>
+			</div>
+			<div class="col-sm-4 feature-item animation slideBottom">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet commodi quas, minus et ipsum minima nesciunt iure cupiditate quaerat consequatur fuga non iusto. Asperiores distinctio veniam autem reprehenderit minus.</p>
+			</div>
+			<div class="col-sm-4 feature-item">
+				<p>Recusandae, illo. Fugit nisi sapiente saepe eveniet beatae, odit dignissimos quas illum, aspernatur quod ipsa reiciendis impedit quos dolorem. Quos iste dolorum tempora aliquid alias rerum eaque, fugit, velit laudantium!</p>
+			</div>
+			<div class="col-sm-4 feature-item animation slideBottom">
+				<p>Magnam repellendus deleniti placeat labore, at quae expedita praesentium autem aliquid quaerat quo non ipsum suscipit nihil animi quidem doloribus consequuntur perferendis nostrum iste libero vero omnis asperiores nobis ut.</p>
+			</div>
+			<div class="col-sm-4 feature-item animation slideBottom">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis amet commodi quas, minus et ipsum minima nesciunt iure cupiditate quaerat consequatur fuga non iusto. Asperiores distinctio veniam autem reprehenderit minus.</p>
+			</div>
+			<div class="col-sm-4 feature-item">
+				<p>Recusandae, illo. Fugit nisi sapiente saepe eveniet beatae, odit dignissimos quas illum, aspernatur quod ipsa reiciendis impedit quos dolorem. Quos iste dolorum tempora aliquid alias rerum eaque, fugit, velit laudantium!</p>
+			</div>
+			<div class="col-sm-4 feature-item animation slideBottom">
+				<p>Magnam repellendus deleniti placeat labore, at quae expedita praesentium autem aliquid quaerat quo non ipsum suscipit nihil animi quidem doloribus consequuntur perferendis nostrum iste libero vero omnis asperiores nobis ut.</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/animate.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.feature').animation({
+				animation : {
+					slideLeft : true
+				}
+			});
+
+			// var $animation_elements = $('.animation');
+			// var $window = $(window);
+
+			// function check_if_in_view() {
+			//   var window_height = $window.height();
+			//   var window_top_position = $window.scrollTop();
+			//   var window_bottom_position = (window_top_position + window_height);
+
+			//   $.each($animation_elements, function() {
+			//     var $element = $(this);
+			//     var element_height = $element.outerHeight();
+			//     var element_top_position = $element.offset().top;
+			//     var element_bottom_position = (element_top_position + element_height);
+
+			//     //check to see if this current container is within viewport
+			//     if ((element_bottom_position >= window_top_position) &&
+			//       (element_top_position <= window_bottom_position)) {
+			//       $element.addClass('in-view');
+			//     } else {
+			//       $element.removeClass('in-view');
+			//     }
+			//   });
+			// }
+
+			// $window.on('scroll resize', check_if_in_view);
+			// $window.trigger('scroll');
+			
+		});
+	</script>
+</body>
+</html>
